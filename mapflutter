@@ -1,0 +1,48 @@
+main()
+{
+  Map friend={
+  1:"1",
+  2:"2",
+  3:"3",
+  4:"4"};
+  print(friend);
+  print(friend.runtimeType);
+  
+  Map friend1={
+  5:"5",
+  6:"6",
+  7:"7",
+  8:"8"};
+  print(friend1);
+  print(friend1.runtimeType);
+  
+  
+  Map friend2={
+  9:"9",
+  10:"10",
+  11:"11",
+  12:"12"};
+  print(friend2);
+  print("friend2.runtimeType \n");
+  
+  Map friend3=
+  {
+    13:"13",
+    14:"14",
+    15:"15",
+    16:"16"
+  };
+  print(friend3);
+  
+  var abc={}..addAll(friend)..addAll(friend1)..addAll(friend2)..addAll(friend3);
+  print(abc);
+  
+  var a = ['a','b','c','d','e'];
+  var b = ['1','2','3','4','5'];
+  var data = Map.fromIterables(b,a);
+  print(data);
+  
+  
+  
+  
+}
